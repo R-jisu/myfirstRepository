@@ -4,9 +4,9 @@ bin/myapp: obj/myapp.o obj/funcs.o
 obj/myapp.o: src/myapp.c
 	gcc -o $@ -c $< -I./include
 
-obj/funcs.o: src/funcs.o
+obj/funcs.o: src/funcs.c
 	gcc -o $@ -c $< -I./include
 
 clean:
-	rm -f bin/maypp
+	rm -f bin/myapp
 	rm -f obj/*.o
