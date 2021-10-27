@@ -3,6 +3,6 @@
 int main()
 {
 	foo();
-	goo();
+	koo();
 	return 0;
 }
